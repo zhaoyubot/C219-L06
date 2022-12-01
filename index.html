@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add Bootstrap CSS here -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Add Bootstrap JS here -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title> Exercise 2</title>
+    <style>
+        .card-deck {
+            margin-top: 50px;
+            align-items: center;
+        }
+    
+        .card {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" style="margin-left: 50px;" href="#">Anime News</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul style="margin-right: 50px;" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="exercise1.html">Exercise 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Assignment.html">Assignment</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 300px">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 300px">
+        <div class="carousel-item active">
+            <img src="images/car1.jpg" class="d-block w-100" alt="aatrox">
+        </div>
+        <div class="carousel-item">
+            <img src="images/car2.png" class="d-block w-100" alt="syndra">
+        </div>
+        <div class="carousel-item">
+            <img src="images/car3.jpg" class="d-block w-100" alt="thresh">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Cards -->
+<div class="card-deck g-5 p-4 b-5">
+    <div class="row">
+        <div class="col-md-4 ">
+            <div class="card mb-3">
+                <img class="card-img-top" src="images/car1.jpg" alt="Jujutsu Kaisen" style="height: 340px;">
+                <div class="card-body">
+                    <h5 class="card-title">Jujutsu Kaisen</h5>
+                    <p class="card-text">Jujutsu Kaisen Season 2 will return in 2023. Check out the new visual trailer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 4 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card mb-3">
+                <img class="card-img-top" src="images/car2.png" alt="Toilet-Bound Hanako-kun" style="height: 340px;">
+                <div class="card-body">
+                    <h5 class="card-title">Toilet-Bound Hanako-kun</h5>
+                    <p class="card-text">Review on Toilet-Bound Hanako-kun Season 1</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 21 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card mb-3">
+                <img class="card-img-top" src="images/car3.jpg" alt="The Promised Neverland" style="height: 340px;">
+                <div class="card-body">
+                    <h5 class="card-title">The Promise Neverland</h5>
+                    <p class="card-text">What went wrong in the second season of The Promised Neverland anime?</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 hours ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
